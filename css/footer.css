@@ -44,7 +44,7 @@
 }
 .footer{
     background-color: #2E2F42;
-    padding: 100px 0;
+    padding: 96px 0;
 }
 .footer-list .icon {
     fill:#f4f4fd;
@@ -95,6 +95,7 @@
     width: 165px;
     padding: 8px 24px;
     transition: background-color 250ms ease-in-out;
+    margin: 0 auto;
 }
 .button-footer:focus,
 .button-footer:hover{
@@ -105,8 +106,7 @@
     gap: 16px;
 }
 .input-footer{
-    width: 264px;
-    height: 40px;
+    width: 100%;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     padding: 8px 16px;
@@ -143,39 +143,77 @@
 .container-form{
     margin-left: auto;
 }
-@media (max-width: 360px) {
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px
+}
+.footer-info,
+.footer-social,
+.footer-subscribe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-form-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+@media (min-width: 768px) {
     .container-footer {
-        display: flex;
-        flex-direction: column;
-        width: 320px;
-        height: 472px;
-        max-width: 1158px;
-        padding-right: 16px;
-        padding-left: 16px;
-        gap: 72px;
-        opacity: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        max-width: 584px;
+    }
+
+    .footer-info,
+    .footer-social {
+        width: calc((100% - 24px) / 2);
+        align-items: flex-start;
+    }
+
+    .footer-subscribe {
+        width: 100%;
+        align-items: flex-start;
     }
 
     .container-form-footer {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+        flex-direction: row;
     }
 
-    .footer-logo,
-    .footer-title,
-    .button-footer {
-        margin: 0 auto;
+    .input-footer {
+        width: 264px;
     }
 }
-@media (min-width:360px) and (max-width:768px) {
-    .container-footer{
-        display: flex;
-        flex-direction: column;
+@media (min-width: 1158px) {
+    .container-footer {
+        flex-wrap: nowrap;
+        max-width: 1158px;
     }
-    .container-form{
-        display: flex;
-        flex-direction: column;
-    }
-}
 
+    .footer-info {
+        width: 264px;
+    }
+
+    .footer-social {
+        width: 208px;
+    }
+
+    .footer-subscribe {
+        width: auto;
+    }
+
+    .container-form-footer {
+        flex-direction: row;
+    }
+
+    .input-footer {
+        width: 264px;
+    }
+}

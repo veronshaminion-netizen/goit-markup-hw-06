@@ -48,3 +48,26 @@
     gap: 48px;
     margin: 0 auto;
 }
+@media (min-width: 768px) {
+    .hero {
+        padding: 112px 0;
+    }
+
+    .hero-title {
+        max-width: 496px;
+        font-size: 56px;
+    }
+
+    .hero-container {
+        gap: 36px;
+    }
+}
+@media(min-width: 1158px) {
+    .hero {
+        padding: 188px 0;
+    }
+
+    .hero-container {
+        gap: 48px;
+    }
+}

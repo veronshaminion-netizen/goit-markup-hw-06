@@ -1,4 +1,4 @@
-#menu{
+.mobile-menu{
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -6,6 +6,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    position: relative;
     background-color: #fff;
 }
 .menu-text{
@@ -34,4 +35,26 @@
 .contacts-link-menu:hover,
 .contacts-link-menu:focus{
     color:#4D5AE5;
+}
+.close-menu{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 1px solid #2E2F4266;
+    margin-bottom: 24px;
+    margin-left: auto;
+    transition: background-color 250ms ease;
+}
+.contacts-menu li{
+    display: flex;
+    flex-direction: column;
 }

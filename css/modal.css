@@ -1,11 +1,11 @@
 .modal{
     display: flex;
     flex-direction: column;
-    width: 408px;
-    height: 584px;
+    width: calc(100% - 32px);
+    max-width: 288px;
+    padding: 72px 16px 24px;
     border-radius: 4px;
     position: relative;
-    padding: 74px 24px 24px 24px;
     background-color: #FCFCFC;
     box-shadow:0px 1px 1px 0px #00000024,
                0px 1px 3px 0px #0000001F,
@@ -53,8 +53,7 @@
     gap: 4px;
     border: 1px solid #2E2F4266;
     border-radius: 4px;
-    width: 360px;
-    height: 40px;
+    width: 100%;
     transition: border-color 250ms ease-in-out;
 }
 .field:focus{
@@ -82,8 +81,7 @@
     padding: 8px 16px;
     border: 1px solid #2E2F4266;
     border-radius: 4px;
-    width: 360px;
-    height: 120px;
+    width: 100%;
     transition: border-color 250ms ease;
 }
 .comment:focus {
@@ -230,4 +228,10 @@
 .checkbox-wrapper{
     display: flex;
     flex-direction: column;
+}
+@media (min-width: 768px) {
+    .modal {
+        max-width: 408px;
+        padding: 72px 24px 24px;
+    }
 }
