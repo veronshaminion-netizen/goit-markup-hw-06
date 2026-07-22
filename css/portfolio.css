@@ -1,0 +1,88 @@
+.portfolio-title {
+    margin-bottom: 72px;
+    color: #2E2F42;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    text-align: center;
+    font-style: bold;
+}
+.portfolio-list h3 {
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-style: medium; 
+}
+.portfolio-list p {
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal; 
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap:48px 24px;
+}
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms ease-in-out;
+}
+.portfolio-item:focus,
+.portfolio-item:hover{
+    box-shadow:
+        0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08)
+}
+
+.portfolio-list-text {
+    border-right: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px 16px;
+}
+.portfolio {
+    padding: 120px 0;
+}
+.container-portfolio {
+    margin: 0 auto;
+    max-width: 1158px;
+}
+.overlay{
+    background-color: #4D5AE5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+.overlay p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    padding: 40px 32px;
+}
+.portfolio-image{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-item:hover .overlay{
+    transform: translateY(0%);
+}
+.image{
+    display: block;
+}
