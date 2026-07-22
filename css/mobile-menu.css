@@ -1,4 +1,4 @@
-.mobile-menu{
+#mobile-menu{
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -8,6 +8,23 @@
     height: 100%;
     position: relative;
     background-color: #fff;
+}
+#mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.mobile-menu {
+    height: 100%;
+    padding: 24px 16px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .menu-text{
     font-family: Roboto;
@@ -57,4 +74,8 @@
 .contacts-menu li{
     display: flex;
     flex-direction: column;
+}
+.social-list-menu {
+    display: flex;
+    gap: 40px;
 }

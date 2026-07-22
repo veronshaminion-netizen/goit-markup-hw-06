@@ -192,12 +192,16 @@
     }
 }
 @media (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
     .container-footer {
         flex-wrap: nowrap;
         max-width: 1158px;
     }
 
     .footer-info {
+        margin-right: 120px;
         width: 264px;
     }
 
@@ -215,5 +219,8 @@
 
     .input-footer {
         width: 264px;
+    }
+    .footer-subscribe{
+        margin-left: auto;
     }
 }
