@@ -143,4 +143,39 @@
 .container-form{
     margin-left: auto;
 }
+@media (max-width: 360px) {
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 472px;
+        max-width: 1158px;
+        padding-right: 16px;
+        padding-left: 16px;
+        gap: 72px;
+        opacity: 1;
+    }
+
+    .container-form-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-logo,
+    .footer-title,
+    .button-footer {
+        margin: 0 auto;
+    }
+}
+@media (min-width:360px) and (max-width:768px) {
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-form{
+        display: flex;
+        flex-direction: column;
+    }
+}
 

@@ -51,7 +51,7 @@
 img{
     display: block;
 }
-.containerteam{
+.container-team{
     margin: 0 auto;
     max-width: 1158px;
 }
@@ -76,4 +76,23 @@ img{
 }
 .team-list-social .icon:focus {
     background-color: #404bbf;
+}
+@media (max-width: 360px) {
+    .team-list {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        max-width: 1158px;
+        padding-right: 16px;
+        padding-left: 16px;
+        gap: 72px;
+        opacity: 1;
+    }
+}
+@media (min-width:360px) and (max-width:768px) {
+    .team-list{
+        display: flex;
+        flex-wrap: wrap;
+        width: calc((100%-72px)/2);
+    }
 }

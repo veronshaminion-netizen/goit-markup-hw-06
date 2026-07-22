@@ -100,3 +100,10 @@
     background-color: #404bbf;
     border-radius: 2px;
 }
+@media (min-width:360px) and (max-width:768px) {
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

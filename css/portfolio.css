@@ -86,3 +86,27 @@
 .image{
     display: block;
 }
+@media (max-width: 360px) {
+    .portfolio-list {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 2512px;
+        max-width: 1158px;
+        padding-right: 16px;
+        padding-left: 16px;
+        gap: 72px;
+        opacity: 1;
+    }
+}
+@media (min-width:360px) and (max-width:768px){
+    .portfolio-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 48px 24px;
+        }
+    
+        .portfolio-item {
+            width: calc((100% - 24px) / 2);
+        }
+}
