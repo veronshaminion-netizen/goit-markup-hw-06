@@ -34,6 +34,7 @@
     color:#F4F4FD;
 }
 .footer-text{
+    margin-top: 16px;
     max-width: 264px;
     color:#F4F4FD;
     font-weight: 400;
@@ -58,6 +59,7 @@
     transition: background-color 250ms ease-in-out;
 }
 .footer-list{
+    margin-top: 16px;
     display: flex;
     gap: 16px;
 }
@@ -196,6 +198,7 @@
         padding: 100px 0;
     }
     .container-footer {
+        column-gap: 0;
         flex-wrap: nowrap;
         max-width: 1158px;
     }
