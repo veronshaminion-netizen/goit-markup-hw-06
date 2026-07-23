@@ -13,6 +13,7 @@
     text-align: center;
 }
 .team-list li{
+    width: 264px;
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
     box-shadow:
@@ -89,7 +90,7 @@ img{
         row-gap: 64px;
     }
 
-    .team-card {
+    .team-list > li {
         width: calc((100%-24px)/2);
         max-width: 264px;
     }
@@ -103,7 +104,7 @@ img{
         flex-wrap: nowrap;
         gap: 24px;
     }
-    .team-card{
+    .team-list > li{
         width: 264px;
     }
 }

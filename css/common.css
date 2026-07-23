@@ -37,21 +37,21 @@ ol {
     margin: -1px;
 }
 .container{
-    max-width: 320px;
+    max-width: 288px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
 }
 @media (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 736px;
         padding-left: 16px;
         padding-right: 16px;
     }
 }
 @media (min-width: 1158px) {
     .container {
-        max-width: 1158px;
+        max-width: 1128px;
         padding: 0 15px;
     }
 }
