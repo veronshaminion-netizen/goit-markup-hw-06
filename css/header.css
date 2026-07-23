@@ -24,9 +24,8 @@
  .header-navigation{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
-    gap: 40px;
+    gap: 76px;
  }
 .menu{
     display: none;
