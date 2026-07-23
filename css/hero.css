@@ -78,8 +78,6 @@
 }
 @media (min-resolution: 2dppx) {
     .hero {
-        linear-gradient:(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-            url("../images/hero-1@2x.jpg");
+        background-image: linear-gradient(180deg, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url("../images/hero-1@2x.jpg");
     }
 }
