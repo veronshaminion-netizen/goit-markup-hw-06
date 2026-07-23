@@ -22,7 +22,7 @@
 }
 .mobile-menu {
     height: 100%;
-    padding: 24px 16px 40px;
+    padding: 72px 24px 40px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -41,15 +41,15 @@
     line-height: 40px;
     letter-spacing: 0.02em;
 }
-.contacts-link-menu{
+.contacts-link-menu {
     text-decoration: none;
 }
 
-.contacts-link-menu:first-child{
+.contacts-menu li:first-child .contacts-link-menu {
     color: #4d5ae5;
 }
 
-.contacts-link-menu:last-child{
+.contacts-menu li:last-child .contacts-link-menu {
     color: #434455;
 }
 .menu-text:hover,
