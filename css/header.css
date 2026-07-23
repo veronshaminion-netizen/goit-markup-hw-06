@@ -122,8 +122,11 @@
         display: flex;
         gap: 40px;
     }
-
-    .contacts{
+    .container-header .address {
+        display: block;
+    }
+    
+    .container-header .contacts {
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -149,9 +152,8 @@
     }
 }
 @media (min-width: 1158px) {
-    .container-header > address{
-        flex-direction: row;
-        gap: 40px;
+    .address{
+    display: block;
     }
     .header-navigation {
         gap: 76px;
@@ -165,9 +167,9 @@
         padding-top: 24px;
         padding-bottom: 24px;
     }
-    .contacts{
-        display: flex;
+    .container-header .contacts {
         flex-direction: row;
         gap: 40px;
     }
+
 }
