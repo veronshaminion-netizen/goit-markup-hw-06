@@ -169,8 +169,7 @@
     .container-footer {
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 72px;
+        gap: 24px;
         max-width: 584px;
     }
 
