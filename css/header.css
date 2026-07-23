@@ -17,6 +17,7 @@
    padding-left: 15px;
    padding-right: 15px;
    display: flex;
+   align-items: center;
    flex-direction: row;
    gap: 76px;
    margin: 0 auto;
@@ -25,7 +26,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
  }
 .menu{
     display: none;
@@ -119,6 +119,7 @@
 @media(min-width: 768px) {
     .menu {
         display: flex;
+        gap: 40px;
     }
 
     .container-header > address{
@@ -162,5 +163,10 @@
         letter-spacing: 0.02em;
         padding-top: 24px;
         padding-bottom: 24px;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
     }
 }
