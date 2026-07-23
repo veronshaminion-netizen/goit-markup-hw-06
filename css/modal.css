@@ -47,6 +47,7 @@
 }
 
 .field {
+    height: 40px;
     padding-left: 38px;
     display: flex;
     flex-direction: column;
