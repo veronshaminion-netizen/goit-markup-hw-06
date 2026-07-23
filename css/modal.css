@@ -206,7 +206,7 @@
     opacity: 0;
 }
 .form-rules-icon{
-    fill: #F4F4FD;
+    color: #F4F4FD;
     opacity: 0;
 }
 .rules:checked+label .active {
@@ -223,7 +223,7 @@
 }
 
 .input-wrapper:focus-within .form-icon {
-    fill: #4d5ae5;
+    color: #4d5ae5;
 }
 .checkbox-wrapper{
     display: flex;

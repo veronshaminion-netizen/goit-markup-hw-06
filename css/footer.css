@@ -48,7 +48,7 @@
     padding: 96px 0;
 }
 .footer-list .icon {
-    fill:#f4f4fd;
+    color: #f4f4fd;
     display: flex;
     justify-content: center;
     align-items: center;

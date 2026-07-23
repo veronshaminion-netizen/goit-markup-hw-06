@@ -153,6 +153,7 @@
 }
 @media (min-width: 1158px) {
     .address{
+    flex-shrink: 0;
     display: block;
     }
     .header-navigation {
@@ -168,6 +169,7 @@
         padding-bottom: 24px;
     }
     .container-header .contacts {
+        display: flex;
         flex-direction: row;
         gap: 40px;
     }
